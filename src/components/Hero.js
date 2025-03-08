@@ -1,4 +1,4 @@
-import { ArrowDown, HelpCircle } from "./Icons"
+import { ArrowDown, HelpCircle } from "./Icons";
 
 const Hero = () => {
   return (
@@ -9,24 +9,31 @@ const Hero = () => {
           <div className="relative w-full h-[450px] flex justify-center">
             {/* First phone (positioned to the left and back) */}
             <div className="absolute top-0 left-[8%] w-2/3 z-10">
-              <img src="/assets/imgs/phone1.png" alt="Phone showing pairing screen" className="w-full" />
+              <img
+                src="/assets/imgs/phone1.png"
+                alt="Phone showing pairing screen"
+                className="w-full"
+              />
             </div>
             {/* Second phone (positioned to the right and front, slightly tilted) */}
             <div className="absolute top-16 right-[8%] w-2/3 z-20">
-              <img 
-                src="/assets/imgs/phone2.png" 
-                alt="Phone showing search actions" 
-                className="w-full" 
-                style={{ transform: 'rotate(5deg)' }} // Add rotation here
+              <img
+                src="/assets/imgs/phone2.png"
+                alt="Phone showing search actions"
+                className="w-full"
+                style={{ transform: "rotate(5deg)" }} // Add rotation here
               />
             </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:pl-0 text-center lg:text-left">
-          <h1 className="text-5xl lg:text-6xl font-black text-primary-700 mb-4 sm:mb-6">search it</h1> {/* Adjusted margin */}
-          <p className="text-lg mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
-  Attach the microcontroller to your desired object, pair your device, and then you may now perform specific search actions.
-</p>
+          <h1 className="text-2xl lg:text-3xl font-bold text-primary-700 mb-4 sm:mb-6">
+            IoT-based Object Locator
+          </h1>
+          <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
+            Attach the microcontroller to your desired object, pair your device,
+            and then you may now perform specific search actions.
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-white border-2 border-primary-700 text-primary-700 hover:bg-primary-700 hover:text-white transition-colors duration-300 rounded-xl py-3 px-6 flex items-center justify-center">
@@ -41,7 +48,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
