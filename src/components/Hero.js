@@ -22,11 +22,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:pl-0">
-          <h1 className="text-5xl lg:text-6xl font-black text-primary-700 mb-6">Let's search it.</h1>
-          <p className="text-lg mb-8 text-gray-800 max-w-lg">
-            Attach the microcontroller to your desired object, pair your device, and then you may now perform specific search actions.
-          </p>
+        <div className="w-full lg:w-1/2 lg:pl-0 text-center lg:text-left">
+          <h1 className="text-5xl lg:text-6xl font-black text-primary-700 mb-4 sm:mb-6">search it</h1> {/* Adjusted margin */}
+          <p className="text-lg mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
+  Attach the microcontroller to your desired object, pair your device, and then you may now perform specific search actions.
+</p>
+
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-white border-2 border-primary-700 text-primary-700 hover:bg-primary-700 hover:text-white transition-colors duration-300 rounded-xl py-3 px-6 flex items-center justify-center">
               <ArrowDown className="w-5 h-5 mr-2" />
