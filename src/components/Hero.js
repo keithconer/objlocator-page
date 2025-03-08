@@ -7,16 +7,16 @@ const Hero = () => {
         <div className="relative w-full max-w-[400px] mx-auto lg:mx-0 mb-8 lg:mb-0">
           {/* Phone mockups using the two separate phone images */}
           <div className="relative w-full h-[450px] flex justify-center">
-            {/* First phone (positioned to the left and back) */}
-            <div className="absolute top-0 left-[8%] w-2/3 z-10">
+            {/* First phone (positioned to the left) */}
+            <div className="absolute top-0 left-0 w-2/3 z-10">
               <img
                 src="/assets/imgs/phone1.png"
                 alt="Phone showing pairing screen"
                 className="w-full"
               />
             </div>
-            {/* Second phone (positioned to the right and front, slightly tilted) */}
-            <div className="absolute top-16 right-[8%] w-2/3 z-20">
+            {/* Second phone (positioned to the right) */}
+            <div className="absolute top-0 right-0 w-2/3 z-20">
               <img
                 src="/assets/imgs/phone2.png"
                 alt="Phone showing search actions"
@@ -27,11 +27,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:pl-0 text-center lg:text-left">
-          <h1 className="text-2xl lg:text-3xl font-bold text-primary-700 mb-4 sm:mb-6">
-            IoT-based Object Locator
+          <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+            Keep your belongings with you.
           </h1>
           <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
-            Attach the microcontroller to your desired object, pair your device,
+            With this IoT-based object locator you may just simply attach the microcontroller to your desired object, pair your device,
             and then you may now perform specific search actions.
           </p>
 
@@ -47,6 +47,26 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Minimal section explaining the product */}
+      <section className="bg-gray-50 py-12 mt-16">
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+            As long as it is within your home.
+          </h1>
+          <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-center lg:mx-auto">
+            The microcontroller that is attached to your keys, backpack, or any item you want to track. Just like that, they’re on your radar, and you can always know where they are. This is an indoor technology that supports 10-15 meters of broadcast signals by utilizing Bluetooth technology, proximity detection, and also visual feedback. You may now be able to find your items instantly and never lose track of your belongings again.
+          </p>
+        </div>
+      </section>
+
+      {/* New section with background image */}
+      <section
+        className="relative h-screen bg-cover bg-no-repeat bg-center mt-16"
+        style={{ backgroundImage: "url('/assets/imgs/bgdesktop.png')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-0"></div>
+      </section>
     </div>
   );
 };

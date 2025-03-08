@@ -1,0 +1,11 @@
+/* For desktop */
+.bg-desktop {
+    background-image: url('/assets/imgs/bgdesktop.png');
+  }
+  
+  /* For mobile */
+  @media (max-width: 640px) {
+    .bg-mobile {
+      background-image: url('/assets/imgs/bgmobile.png');
+    }
+  }
