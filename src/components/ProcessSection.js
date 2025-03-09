@@ -6,8 +6,8 @@ const ProcessSection = () => {
       <div className="container mx-auto px-4">
         {/* Large header text */}
         <div className="text-center mb-12">
-          <h2 className="text-7xl lg:text-7xl font-medium text-primary-700 tracking-tight">
-            attach it. pair it. <span className="font-normal">then</span><br />
+          <h2 className="text-7xl lg:text-7xl font-regular text-primary-700 tracking-tight">
+            simply attach it. pair it. <span className="font-normal">search it.</span><br/>
           </h2>
         </div>
 
