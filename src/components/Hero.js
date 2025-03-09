@@ -37,7 +37,7 @@ const Hero = () => {
 
         
         <div className="w-full lg:w-1/2 lg:pl-0 text-center lg:text-left">
-          <h1 className="text-3xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+          <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
             Keep your belongings with you.
           </h1>
           <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
@@ -67,7 +67,7 @@ const Hero = () => {
    {/* Minimal section explaining the product */}
 <section className="bg-white py-12 mt-16">
   <div className="text-center max-w-3xl mx-auto">
-    <h1 className="text-3xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+    <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
       As long as it is within your home.
     </h1>
     <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-center lg:mx-auto">
