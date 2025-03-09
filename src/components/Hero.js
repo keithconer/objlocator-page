@@ -1,4 +1,6 @@
 import { ArrowDown, HelpCircle } from "./Icons";
+import ProcessSection from "./ProcessSection"
+
 
 const Hero = () => {
   return (
@@ -26,8 +28,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+
+
+        
         <div className="w-full lg:w-1/2 lg:pl-0 text-center lg:text-left">
-          <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+          <h1 className="text-3xl lg:text-4xl font-medium text-primary-700 mb-4 sm:mb-6">
             Keep your belongings with you.
           </h1>
           <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-left lg:mx-0">
@@ -48,10 +54,13 @@ const Hero = () => {
         </div>
       </div>
 
+
+     
+
       {/* Minimal section explaining the product */}
       <section className="bg-gray-50 py-12 mt-16">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl lg:text-4xl font-bold text-primary-700 mb-4 sm:mb-6">
+          <h1 className="text-3xl lg:text-4xl font-medium text-primary-700 mb-4 sm:mb-6">
             As long as it is within your home.
           </h1>
           <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-800 max-w-[90%] sm:max-w-lg mx-auto sm:mx-0 text-justify sm:text-center lg:text-center lg:mx-auto">
@@ -60,13 +69,11 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* New section with background image */}
-      <section
-        className="relative h-screen bg-cover bg-no-repeat bg-center mt-16"
-        style={{ backgroundImage: "url('/assets/imgs/bgdesktop.png')" }}
-      >
-        <div className="absolute inset-0 bg-black opacity-0"></div>
-      </section>
+    
+
+      <ProcessSection />
+
+
     </div>
   );
 };
