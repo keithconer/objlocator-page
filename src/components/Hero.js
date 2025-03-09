@@ -1,8 +1,12 @@
 import { ArrowDown, HelpCircle } from "./Icons";
 import ProcessSection from "./ProcessSection"
-
+import HowToUseSection from "./HowToUseSection"
 
 const Hero = () => {
+  const scrollToHowTo = () => {
+    document.getElementById("how-to-use")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div className="container mx-auto px-6 py-12">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
@@ -46,7 +50,10 @@ const Hero = () => {
               <ArrowDown className="w-5 h-5 mr-2" />
               Download APK
             </button>
-            <button className="bg-primary-700 text-white hover:bg-primary-800 transition-colors duration-300 rounded-xl py-3 px-6 flex items-center justify-center">
+            <button
+              onClick={scrollToHowTo}
+              className="bg-primary-700 text-white hover:bg-primary-800 transition-colors duration-300 rounded-xl py-3 px-6 flex items-center justify-center"
+            >
               <HelpCircle className="w-5 h-5 mr-2" />
               How to Use?
             </button>
@@ -73,6 +80,8 @@ const Hero = () => {
 
       <ProcessSection />
 
+ {/* How to Use Section */}
+ <HowToUseSection />
 
     </div>
   );
