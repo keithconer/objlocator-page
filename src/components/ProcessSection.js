@@ -13,7 +13,7 @@ const ProcessSection = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 relative">
           {/* Left side with bags */}
-          <div className="relative w-full lg:w-1/3 flex justify-center group cursor-pointer"> {/* Added cursor-pointer */}
+          <div className="relative w-full lg:w-1/3 flex justify-center cursor-pointer">
             <div className="relative w-full max-w-[280px]">
               <img src="/assets/imgs/campbag.png" alt="Camping backpack" className="w-full" />
               <img
@@ -21,13 +21,13 @@ const ProcessSection = () => {
                 alt="Small bag with items"
                 className="absolute bottom-0 right-0 w-1/2 transform translate-x-1/4"
               />
-              {/* Showcard always visible on mobile, hidden on larger screens */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-lg shadow-md transition-opacity relative lg:opacity-0 lg:group-hover:opacity-100">
+              {/* Showcard always visible with rounded borders */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-xl shadow-md relative">
                 <div className="flex items-center space-x-2">
                   <FaRegLightbulb className="text-white" />
                   <div>
                     <h3 className="text-sm font-semibold">Your personal stuff</h3>
-                    <p className="text-xs">Keep your essentials organized</p>
+                    <p className="text-xs">Where you will attach or place beside the hardware</p>
                   </div>
                 </div>
                 {/* The arrow/triangle pointer */}
@@ -37,10 +37,10 @@ const ProcessSection = () => {
           </div>
 
           {/* Center with microcontroller */}
-          <div className="relative w-full lg:w-1/3 flex flex-col items-center justify-center group cursor-pointer"> {/* Added cursor-pointer */}
+          <div className="relative w-full lg:w-1/3 flex flex-col items-center justify-center cursor-pointer">
             <img src="/assets/imgs/microcontroller.png" alt="Microcontroller" className="w-32 lg:w-40 mb-4" />
-            {/* Showcard always visible on mobile, hidden on larger screens */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-lg shadow-md transition-opacity relative lg:opacity-0 lg:group-hover:opacity-100">
+            {/* Showcard always visible with rounded borders */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-xl shadow-md relative">
               <div className="flex items-center space-x-2">
                 <FaRegLightbulb className="text-white" />
                 <div>
@@ -54,15 +54,15 @@ const ProcessSection = () => {
           </div>
 
           {/* Right side with phone hand */}
-          <div className="relative w-full lg:w-1/3 flex justify-center group cursor-pointer"> {/* Added cursor-pointer */}
+          <div className="relative w-full lg:w-1/3 flex justify-center cursor-pointer">
             <div className="relative w-full max-w-[280px]">
               <img src="/assets/imgs/phonehand.png" alt="Hand holding phone" className="w-full" />
-              {/* Showcard always visible on mobile, hidden on larger screens */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-lg shadow-md transition-opacity relative lg:opacity-0 lg:group-hover:opacity-100">
+              {/* Showcard always visible with rounded borders */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-[-12px] opacity-100 bg-black text-white p-4 rounded-xl shadow-md relative">
                 <div className="flex items-center space-x-2">
                   <FaRegLightbulb className="text-white" />
                   <div>
-                    <h3 className="text-sm font-semibold">Mobile application to be install</h3>
+                    <h3 className="text-sm font-semibold">Mobile application to be installed</h3>
                     <p className="text-xs">Access and control via your phone</p>
                   </div>
                 </div>
